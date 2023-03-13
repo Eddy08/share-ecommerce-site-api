@@ -1,0 +1,72 @@
+Login : - OTP
+
+Products Schema(CRUD Operations,Search functionality, sorting(price), filtering on basis of colour, size,category,price):-
+
+title:string,
+price: number,
+rating: number,
+description: string,
+catagory: array,
+image: array,
+reviews: array(A user should be able to post reviews with images),
+size: array,
+colour: array,
+tags: array,
+Product id: string,
+additional info: array
+
+
+Cart Schema(CRUD Operations):-
+
+title:string,
+price: number,
+rating: number,
+description: string,
+catagory: array,
+image: array,
+reviews: array,
+size: array,
+colour: array,
+tags: array,
+Product id: string,
+additional info: array
+
+MyOrders:-
+
+
+title:string,
+price: number,
+rating: number,
+description: string,
+catagory: array,
+image: array,
+reviews: array,
+size: array,
+colour: array,
+tags: array,
+Product id: string,
+additional info: array
+
+
+Checkout:-
+
+name:string,
+email: string,
+phoneNo: string,
+Address: string,
+Pincode: string,
+city: string,
+
+
+PromoCode:-
+
+code:string,
+discount: string,
+validfrom: date,
+validtill: date,
+
+UserProfile:-
+name:string,
+email:string,
+phnoneNo:string,
+Orders: array
