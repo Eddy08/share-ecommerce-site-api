@@ -1,12 +1,13 @@
 package com.ecommerce.site.dto;
 
-import com.ecommerce.site.constants.Size;
+import java.util.List;
+
 import com.ecommerce.site.constants.Category;
 import com.ecommerce.site.constants.Colour;
 import com.ecommerce.site.constants.Rating;
+import com.ecommerce.site.constants.Size;
 
 import lombok.Data;
-import java.util.List;
 
 @Data
 public class OrderDTO {
