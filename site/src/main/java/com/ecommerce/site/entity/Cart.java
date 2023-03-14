@@ -27,8 +27,9 @@ public class Cart {
     private Rating rating;
     private String description;
     private Category catagory;
-    @OneToMany()
+    @OneToMany
     private List<Image> imageArray;
+    @OneToMany
     private List<Review> reviewArray;
     private Size size;
     private Colour colour;

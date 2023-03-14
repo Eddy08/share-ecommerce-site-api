@@ -6,6 +6,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 import com.ecommerce.site.constants.Category;
@@ -27,7 +28,9 @@ public class Product {
     private Rating rating;
     private String description;
     private Category category;
+    @OneToMany
     private List<Image> imageArray;
+    @OneToMany
     private List<Review> reviewArray;
     private Size size;
     private Colour colour;
