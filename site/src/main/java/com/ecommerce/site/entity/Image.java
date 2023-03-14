@@ -10,7 +10,7 @@ import jakarta.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table(name = "Image")
+@Table
 @Data
 public class Image {
     @Id

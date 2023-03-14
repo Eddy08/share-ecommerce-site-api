@@ -3,6 +3,9 @@ package com.ecommerce.site.entity;
 import com.ecommerce.site.constants.Size;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 import com.ecommerce.site.constants.Category;
@@ -12,10 +15,13 @@ import com.ecommerce.site.constants.Rating;
 import lombok.Data;
 import java.util.List;
 
-@Data
 @Entity
-@Table(name = "PRODUCT")
+@Table
+@Data
 public class Product {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
     private String title;
     private double price;
     private Rating rating;
